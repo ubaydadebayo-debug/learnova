@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import BrandMark from '../../components/common/BrandMark';
 import {
   ArrowRight,
   Award,
@@ -12,7 +13,6 @@ import {
   Quote,
 } from 'lucide-react';
 import Button from '../../components/common/Button';
-import ApiStatus from '../../components/common/ApiStatus';
 import CourseCard from '../../components/courses/CourseCard';
 import { useFetch } from '../../hooks/useFetch';
 import { listCourses } from '../../services/courseService';
@@ -97,9 +97,8 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-surface">
         <div className="container-page flex flex-col items-center py-24 text-center sm:py-32">
-          <ApiStatus />
-
-          <h1 className="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight text-navy sm:text-5xl lg:text-6xl">
+          <BrandMark className="h-20 w-20" />
+          <h1 className="mt-8 max-w-3xl text-4xl font-extrabold tracking-tight text-navy sm:text-5xl lg:text-6xl">
             {BRAND.tagline}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-navy/60 sm:text-xl">

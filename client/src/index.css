@@ -37,6 +37,13 @@
     @apply text-primary transition-colors;
   }
 
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  input[type="button"]:not(:disabled),
+  input[type="submit"]:not(:disabled) {
+    cursor: pointer;
+  }
+
   ::selection {
     background-color: #2563eb;
     color: #ffffff;

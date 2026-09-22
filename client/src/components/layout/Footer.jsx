@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { GraduationCap } from 'lucide-react';
+import BrandMark from '../common/BrandMark';
 import { BRAND, NAV_LINKS } from '../../constants';
 
 const footerLinks = [
@@ -26,9 +26,7 @@ export default function Footer() {
       <div className="container-page grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
-              <GraduationCap className="h-4 w-4" aria-hidden="true" />
-            </span>
+            <BrandMark className="h-7 w-7 text-primary" />
             <span className="font-heading text-lg font-extrabold text-navy">{BRAND.name}</span>
           </div>
           <p className="max-w-xs text-sm leading-relaxed text-navy/60">

@@ -8,7 +8,7 @@ export default function PublicLayout() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar onMobileMenuToggle={() => setMenuOpen((open) => !open)} />
+      <Navbar open={menuOpen} onOpenChange={setMenuOpen} />
       <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
       <main className="flex-1">
         <Outlet />
